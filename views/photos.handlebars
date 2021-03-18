@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <div class="container">
+    <table class="table table-striped">
+        <thead>
+            <th>AlbumId</th>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Url</th>
+            <th>Thumbnail Url</th>
+        </thead>
+        <tbody>
+            {{#each photosdata}}
+            <tr>
+                <td>{{albumId}}</td>
+                <td>{{id}}</td>
+                <td>{{title}}</td>
+                <td>{{url}}</td>
+                <td>{{thumbnailUrl}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>
